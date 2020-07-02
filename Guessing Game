@@ -1,5 +1,5 @@
 import random
-secret_word = "DONDURMA"
+secret_word = "select a word"
 guess = ""
 guess_times = 0
 out_of_guesses = False
