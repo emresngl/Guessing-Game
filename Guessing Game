@@ -3,6 +3,8 @@ secret_word = "select a word"
 guess = ""
 guess_times = 0
 out_of_guesses = False
+lenght = len(secret_word)
+print("The lenght of the word is %d." % lenght)
 
 while guess != secret_word and not(out_of_guesses):
     if guess_times < 3:
