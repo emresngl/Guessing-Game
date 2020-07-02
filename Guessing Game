@@ -3,6 +3,7 @@ secret_word = "select a word"
 guess = ""
 guess_times = 0
 out_of_guesses = False
+
 lenght = len(secret_word)
 print("The lenght of the word is %d." % lenght)
 
@@ -11,7 +12,7 @@ while guess != secret_word and not(out_of_guesses):
         guess = input("Enter a guess:")
         guess_times += 1
         
-        if guess_times < 3:
+        if guess_times < 3 and guess != secret_word:
             x = random.randrange(0, 6)
             print(secret_word[x] )
             x += 1
